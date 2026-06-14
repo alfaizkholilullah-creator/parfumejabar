@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Perfume Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    background:linear-gradient(135deg,#000,#2c3e50);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:80vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1594035910387-fea47794261f');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    padding:15px 35px;
+    border:none;
+    background:gold;
+    color:black;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.judul{
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:35px;
+}
+
+.produk{
+    padding:0 8% 50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.diskon{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:red;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.info{
+    padding:20px;
+}
+
+.rating{
+    color:orange;
+    margin:10px 0;
+}
+
+.harga{
+    color:#27ae60;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.lama{
+    text-decoration:line-through;
+    color:gray;
+    font-size:14px;
+}
+
+.btn{
+    margin-top:15px;
+    display:block;
+    text-align:center;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+}
+
+.btn:hover{
+    background:#333;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Luxury Perfume</div>
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Produk</a>
+        <a href="#">Promo</a>
+        <a href="#">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Luxury Perfume Collection</h1>
+        <h1>By Abdul Jabar</h1>
+        <p>Temukan parfum premium dengan aroma eksklusif</p>
+        <button>Lihat Koleksi</button>
+    </div>
+</section>
+
+<h2 class="judul">Produk Terlaris</h2>
+
+<section class="produk">
+
+<div class="card">
+<span class="diskon">-20%</span>
+<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600" alt="">
+<div class="info">
+<h3>Dior Sauvage</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp1.900.000</div>
+<div class="harga">Rp1.500.000</div>
+<a href="https://wa.me/6281234567890" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-15%</span>
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600" alt="">
+<div class="info">
+<h3>Chanel No.5</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp2.400.000</div>
+<div class="harga">Rp2.100.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-10%</span>
+<img src="https://images.unsplash.com/photo-1615634262417-d5315f1a5e83?w=600" alt="">
+<div class="info">
+<h3>Versace Eros</h3>
+<div class="rating">★★★★☆</div>
+<div class="lama">Rp1.500.000</div>
+<div class="harga">Rp1.350.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-25%</span>
+<img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=600" alt="">
+<div class="info">
+<h3>Black Opium</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp2.300.000</div>
+<div class="harga">Rp1.800.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-20%</span>
+<img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600" alt="">
+<div class="info">
+<h3>Acqua Di Gio</h3>
+<div class="rating">★★★★☆</div>
+<div class="lama">Rp1.800.000</div>
+<div class="harga">Rp1.450.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-18%</span>
+<img src="https://images.unsplash.com/photo-1619994403073-2cec99c6a65e?w=600" alt="">
+<div class="info">
+<h3>Tom Ford Oud Wood</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp3.900.000</div>
+<div class="harga">Rp3.200.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-12%</span>
+<img src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=600" alt="">
+<div class="info">
+<h3>Bleu De Chanel</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp2.200.000</div>
+<div class="harga">Rp1.950.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-15%</span>
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600" alt="">
+<div class="info">
+<h3>Gucci Bloom</h3>
+<div class="rating">★★★★☆</div>
+<div class="lama">Rp2.000.000</div>
+<div class="harga">Rp1.700.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-20%</span>
+<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600" alt="">
+<div class="info">
+<h3>YSL Libre</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp2.300.000</div>
+<div class="harga">Rp1.850.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+<div class="card">
+<span class="diskon">-30%</span>
+<img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=600" alt="">
+<div class="info">
+<h3>Baccarat Rouge 540</h3>
+<div class="rating">★★★★★</div>
+<div class="lama">Rp6.000.000</div>
+<div class="harga">Rp4.500.000</div>
+<a href="#" class="btn">Pesan Sekarang</a>
+</div>
+</div>
+
+</section>
+
+<footer>
+<h3>Luxury Perfume Store</h3>
+<p>📞 WhatsApp: 0812-3537-1300</p>
+<p>📧 Email: Abduljabarstore@gmail.com</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
